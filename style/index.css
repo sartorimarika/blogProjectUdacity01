@@ -100,10 +100,13 @@ nav {
 /* MINDY'S COLUMN */
 .mindys-column {
 /*     text-align: center; */
-border: 1px solid red;
+    border: 1px solid red;
+    background-color: var(--primary-color);
 }
 
-
+.mindys-column .more-posts a{
+    color: #fff;
+}
 
 /* FOOTER */
  footer{
