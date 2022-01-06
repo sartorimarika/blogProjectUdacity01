@@ -17,7 +17,8 @@ body {
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr); /* TODO diminuire il n. di colonne
+    e fare le card quadrate cosi la grid è piu semplice da fare*/
     grid-gap: 1em;
 }
 .page-nav, footer{
@@ -51,43 +52,48 @@ article {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 688px) {
-    body{
+    .page-main{
         background-color: yellowgreen;
     }
+
     .grid{ /* TODO sistemare query grid da qui.
         Che sia il caso di sistemare il layout in grid-template-areas?
         Perchè con grid-template-columns non riesco a far valere le card per due colonne
         (c'è un modo? cosi non dovrei usare grid-template-areas) */
-        display: flex;
-        grid-template-areas:
+        display: grid;
+/*         grid-template-areas:
         "nav nav nav nav nav nav nav nav nav nav nav nav"
         ". hl hl hl hl hl hl hl hl hl hl ."
-        "card card card card card card card card card card card card";
-        grid-template-columns: repeat(12, 1fr);
-    }
+        "card card card card card card card card card card card card"; */
+/*         grid-template-columns: repeat(12, 1fr);
+ */    }
     .page-nav {
-        grid-area: nav;
+   /*      grid-area: nav; */
+/*         grid-column: 1 / 12; */
     }
     .article-highlight {
         border: 1px solid rgb(255, 30, 0);
         /* grid-column: 2 / 12; */
-        grid-area: hl;
+/*         grid-area: hl; */
     }
     
-    article {
-        border: 1px solid blue;
+    #article-1,
+    #article-2 {
+        border: 5px solid blue;
        /*  grid-column: 2 / 12; */
+       grid-row: 2 / 3;
+
     }
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    .page-main{
         background-color: aqua;
     }
 }
 
 @media screen and (min-width: 1312px) {
-    body{
+    .page-main{
         background-color: pink;
     }
 }
