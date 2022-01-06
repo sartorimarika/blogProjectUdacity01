@@ -6,51 +6,204 @@
 }
 
 * {
-    box-sizing: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    padding: 0;
-    margin: 0;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /* TODO diminuire il n. di colonne
-    e fare le card quadrate cosi la grid è piu semplice da fare*/
-    grid-gap: 1em;
-}
-.page-nav, footer{
-    grid-column: 1 / 13;
-}
+/* ================================================================================*/
+/* =========================  phone style  ========================================*/
+/* ================================================================================*/
 
-.page-nav{
-    display: flex;
-}
-article {
-    border: 1px solid red;
-    grid-column: 2 / 12;
-}
-/* TODO
-.MORE-POSTS link da controllare come centrarli. Se usare grid o cos'altro
-*/
-.more-posts {
-    grid-column: 5 / 10;
-}
-.page-nav {
-    background-color: bisque;
-}
+@media screen and (min-width: 350px){
+    .page-main{
+        background-color: burlywood;
+    }
 
-.page-main {
-    background-color: burlywood;
-}
+    .page-main-posts{
+        display: grid;
+        gap: 50px;
+    }
 
-.page-footer{
-    background-color: cornsilk;
-}
+    .grid{
+        border: 4px solid rgb(67, 182, 38);
+        width: 100%;
+        display: grid;
+        
+    }
+    
+    
+    .page-nav, footer{
 
-/* MEDIA QUERIES */
+    }
+    
+    .page-nav{
+        background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .page-nav .logo img {
+        border: 1px solid red;
+        max-width: 50px;
+    }
+    
+    .page-nav ul{
+        border: 1px solid rgb(139, 135, 135);
+        list-style-type: none;
+        display: flex;
+        padding: 1.2em;
+    }
+    
+    .page-nav li a{
+        padding: 2em;
+    }
+    
+    
+    article {
+        border: 1px solid violet;
+   }
+
+    /* CARD STYLE */
+    .cards{
+        /*     border: 1px solid pink;*/
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            width: 400px;
+            height: 350px;
+            border-radius: 20px;
+            background-color: white;
+            overflow: hidden;
+            margin: auto;
+        }
+    .article-highlight h1{
+     margin: auto;
+     border: 1px solid yellow;
+    }
+    .highlight-card{
+        /*     border: 1px solid pink;*/
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            width: 400px;
+            height: 500px;
+            border-radius: 20px;
+            background: url("../images/power-boy.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            margin: auto;
+        }
+    
+    .card-highlight-image {
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    .highlight-card .card-content{
+
+    }
+    
+    #article-1 .card-image {
+            border: 1px solid red;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            background: url("../images/grapefruit.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    #article-2 .card-image {
+            border: 1px solid red;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            background: url("../images/workout.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    #article-3 .card-image {
+        border: 1px solid red;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background: url("../images/pregnant-couple.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #article-4 .card-image {
+        border: 1px solid red;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background: url("../images/pregnant.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card-content{
+        /*     border: 1px solid blue;*/
+            padding: 2em;
+            
+        }
+
+    .card-content .article-category{
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 0.4em;
+        }
+        
+    .card-content .article-title{
+            font-size: 1.3em;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 0.4em;
+        }
+
+        
+    .card-content .article-date{
+            font-size: 0.9em;
+            font-weight: 200;
+        }
+
+/* fine CARD STYLES */        
+        
+    .more-posts{
+            text-align: center;
+            padding: 1em;
+        }
+        
+    .more-posts a{
+            color: var(--primary-color);
+        
+        }
+
+
+    .page-footer{
+        background-color: cornsilk;
+        text-align: center;
+    }
+
+    .page-footer .logo{
+        max-width: 10%;
+    }
+    
+} 
+
+
+
+
+/* ================================================================================*/
+/* =========================  tablet style  =======================================*/
+/* ================================================================================*/
+
 @media screen and (min-width: 688px) {
     .page-main{
         background-color: yellowgreen;
@@ -85,13 +238,18 @@ article {
 
     }
 }
-
+/* ================================================================================*/
+/* =========================  laptop style  =======================================*/
+/* ================================================================================*/
 @media screen and (min-width: 992px) {
     .page-main{
         background-color: aqua;
     }
 }
 
+/* ================================================================================*/
+/* =========================  large screen style  =================================*/
+/* ================================================================================*/
 @media screen and (min-width: 1312px) {
     .page-main{
         background-color: pink;
