@@ -33,9 +33,6 @@ body {
 
     .grid{
         border: 4px solid rgb(67, 182, 38);
-
-        display: grid;
-        
     }
     
     
@@ -110,7 +107,7 @@ body {
     
     .card-highlight-image {
         border: 1px solid red;
-        width: auto%;
+        width: auto;
         height: 100%;
         overflow: hidden;
         position: absolute;
@@ -211,7 +208,6 @@ body {
 /* fine CARD STYLES */        
         
     .more-posts{
-            color: green;
             text-align: center;
         }
         
@@ -219,16 +215,20 @@ body {
             color: var(--primary-color);
         }
 
+    #more-posts-mindy{
+        color: var(--primary-color);
+        padding: 1em;
+    }
 
-    .page-footer{
+    .page-footer{ 
         background-color: cornsilk;
         text-align: center;
     }
 
-    .page-footer .logo{
+    .page-footer .logo {
         max-width: 10%;
     }
-    
+
 } 
 
 
@@ -243,32 +243,19 @@ body {
         background-color: yellowgreen;
     }
 
-    .grid{ /* TODO sistemare query grid da qui.
-        Che sia il caso di sistemare il layout in grid-template-areas?
-        Perchè con grid-template-columns non riesco a far valere le card per due colonne
-        (c'è un modo? cosi non dovrei usare grid-template-areas) */
+    .grid{
         display: grid;
-/*         grid-template-areas:
-        "nav nav nav nav nav nav nav nav nav nav nav nav"
-        ". hl hl hl hl hl hl hl hl hl hl ."
-        "card card card card card card card card card card card card"; */
-/*         grid-template-columns: repeat(12, 1fr);
- */    }
-    .page-nav {
-   /*      grid-area: nav; */
-/*         grid-column: 1 / 12; */
+        grid-template-columns: 1fr 1fr;
     }
+
     .article-highlight {
         border: 1px solid rgb(255, 30, 0);
-        /* grid-column: 2 / 12; */
-/*         grid-area: hl; */
     }
     
     #article-1,
     #article-2 {
         border: 5px solid blue;
-       /*  grid-column: 2 / 12; */
-       grid-row: 2 / 3;
+
 
     }
 }
