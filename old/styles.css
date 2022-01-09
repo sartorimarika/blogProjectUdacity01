@@ -80,7 +80,7 @@ body {
             overflow: hidden;
 
         }
-
+/*fatto da qui*/
     .article-highlight{
         margin: 0 auto;
         border: 1px solid yellow;
@@ -122,6 +122,7 @@ body {
         bottom: 0;
 
     }
+    /*fatto fino a qui*/
     
     #article-1 .card-image {
             border: 1px solid red;

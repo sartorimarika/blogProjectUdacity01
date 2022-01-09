@@ -110,11 +110,13 @@ body{
     #highlight-1{
         background-color: aliceblue;
         grid-area: "highlight-1";
+        
     }
 
     #article-1{
         background-color: blueviolet;
         grid-area: "article-1";
+        
     }
 
     #article-2{
