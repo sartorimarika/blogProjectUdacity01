@@ -1,1 +1,100 @@
 @import url(layout.css);
+
+.grid-container-article{
+    border: 2px solid red;
+    width: 100vw;
+}
+
+/* ================================================================================*/
+/* =========================  LATEST ARTICLES STYLES ==============================*/
+/* ================================================================================*/
+
+.latest-posts-flex {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.latest-posts-flex h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.latest-post-1 .card-image {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background: url("../images/happy.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    ;
+}
+
+.latest-post-2 .card-image {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background: url("../images/happy.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.latest-post-3 .card-image {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background: url("../images/happy.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* ================================================================================*/
+/* =========================  phone style =========================================*/
+/* ================================================================================*/
+
+@media screen and (min-width: 320px) {
+
+    header {
+        background-color: burlywood;
+    }
+    
+    .intro {
+        background-color: coral;
+    }
+    .recipe {
+        background-color: rgb(152, 224, 224);
+    }
+    .social {
+        background-color: rgb(226, 248, 255);
+    }
+
+    .latest-posts {
+        background-color: antiquewhite
+    }
+}
+
+/* ================================================================================*/
+/* =========================  tablet style ========================================*/
+/* ================================================================================*/
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+/* ================================================================================*/
+/* =========================  desktop style =======================================*/
+/* ================================================================================*/
+
+@media screen and (min-width: 1024px) {
+
+
+}
