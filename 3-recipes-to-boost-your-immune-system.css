@@ -1,7 +1,7 @@
 @import url(layout.css);
 
 .grid-container-article{
-    border: 2px solid red;
+    border: 5px solid red;
     width: 100vw;
 }
 
@@ -13,7 +13,8 @@
     border: 1px solid blue;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 2em;
+    
 
 }
 
@@ -22,7 +23,7 @@
     font-weight: 300;
 }
 
-.latest-post-1 .card-image {
+.latest-post-1 .card-image-latest-posts {
     border: 1px solid red;
     width: 100px;
     height: 100px;
@@ -31,26 +32,27 @@
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-    ;
+    
 }
 
-.latest-post-2 .card-image {
-    border: 1px solid red;
+.latest-post-2 .card-image-latest-posts {
+    border: 1px solid yellow;
     width: 100px;
     height: 100px;
     overflow: hidden;
-    background: url("../images/happy.jpg");
+    background: url("../images/workout.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
 }
 
-.latest-post-3 .card-image {
-    border: 1px solid red;
+
+.latest-post-3 .card-image-latest-posts {
+    border: 1px solid purple;
     width: 100px;
     height: 100px;
     overflow: hidden;
-    background: url("../images/happy.jpg");
+    background: url("../images/pregnant.jpg");
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
