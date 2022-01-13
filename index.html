@@ -4,38 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga4Mamas Blog Home Page</title>
-    <link rel="stylesheet" href="./style/index.css">
+    <title>Layout Yoga4Mamas</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6987e8c1a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="grid-container">
-        <nav class="page-nav">
-            <div class="logo"><img src="images/yoga4mamas-logo.png" alt=""></div>
-                <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./">Blog</a></li>
-                </ul>
+        <nav class="grid">
+            <div class="logo"><a href="./"><img src="images/yoga4mamas-logo.png" alt="logo"></a></div>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">Blog</a></li>
+            </ul>
         </nav>
-        <div class="page-main-posts">
-            <div><section class="article-highlight" id="highlight-1">highlight-1</section></div>
-            <div>
-                <section class="article" id="article-1">article-1</section>
-                <section class="article" id="article-2">article-2</section>
+        <article class="highlight-1 grid highlight">
+            <div class="article-highlight">
+                <h1>Latest Posts</h1>
+                <div class="highlight-card">
+                    <div class="card-highlight-image"></div>
+                        <div class="card-content">
+                            <h4 class="article-category">highlights</h4>
+                            <h3 class="article-title">How To Stick With New Year's Resolutions</h3>
+                            <h5 class="article-date">1 December 2022</h5>
+                        </div>
+                </div>
             </div>
-            <div>
-                <section class="article" id="article-3">article-3</section>
-                <section class="article" id="article-4">article-4</section>
+        </article>
+        <article class="article-1 grid article">
+            <div class="cards" id="article-1">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h4 class="article-category">recipes</h4>
+                    <h3 class="article-title">3 Recipes To Boost Your Immune System</h3>
+                    <h5 class="article-date">4 December 2021</h5>
+                </div>
             </div>
-            <div><section class="article-highlight" id="highlight-2">highlight-2</section></div>
+        </article>
+        <article class="article-2 grid article">
+            <div class="cards" id="article-2">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h4 class="article-category">workout</h4>
+                    <h3 class="article-title">How To Create The Perfect Workout Plan</h3>
+                    <h5 class="article-date">21 November 2021</h5>
+                </div>
+            </div>
+        </article>
+        <article class="article-3 grid article">
+            <div class="cards" id="article-3">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h4 class="article-category">workout</h4>
+                    <h3 class="article-title">Second Trimester Workout</h3>
+                    <h5 class="article-date">3 November 2021</h5>
+                </div>
+            </div>
+        </article>
+        <article class="article-4 grid article">
+            <div class="cards" id="article-4">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h4 class="article-category">wellness</h4>
+                    <h3 class="article-title">6 Signs You Need To Pause</h3>
+                    <h5 class="article-date">15 October 2021</h5>
+                </div>
+            </div>
+        </article>
+        <div class="more-posts">
+            <a href="./layout.html" class="link">More Posts ></a>
         </div>
-        <footer>
-            <div class="footer">
-                <img src="./images/yoga4mamas-logo.png" alt="" class="logo">
-                <p class="copyright">Copyright © 2022 Yoga4Mamas</p>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-apple"></i>
+        <article class="highlight-2 grid highlight mindys-column">
+            <div class="article-highlight">
+                <h2>Mindy's Column</h2>
+                <div class="highlight-card-mindy">
+                    <div class="card-highlight-image"></div>
+                        <div class="card-content">
+                            <h4 class="article-category">highlights</h4>
+                            <h3 class="article-title">Why Affirmations Can Change How You Think</h3>
+                            <h5 class="article-date">18 October 2021</h5>
+                        </div>
+                </div>
             </div>
-        </footer>
-    </div> <!-- fine grid-container -->
+        </article>
+        <div class="more-posts-mindy">
+            <a href="./layout.html" class="link">More Posts from Mindy></a>
+        </div>
+        <footer class="footer-homepage">                
+            <button><img src="./images/yoga4mamas-logo.png" alt="logo" class="logo"></button>            <p class="copyright">Copyright © 2022 Yoga4Mamas</p>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-apple"></i></footer>
+    </div>
+        
 </body>
 </html>

@@ -1,16 +1,15 @@
-@import url(layout.css);
+@import url(index.css);
 
 body {
     color: var(--text-color);
 }
 .grid-container-article{
-    border: 5px solid red;
     width: 100vw;
+    
 }
 
 header {
-    background-color: rgb(224, 197, 161);
-    
+    padding: 0 0.5em;
 }
 
 .header-flex {
@@ -41,6 +40,12 @@ header h3 {
 header q {
     font-size: 0.8rem;
 }
+
+.author-section {
+    display: flex;
+    justify-content: start;
+}
+
 .author-img {
     width: 60px;
     height: 60px;
@@ -49,15 +54,13 @@ header q {
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-    float: left;
-    border: 1px solid rgb(209, 197, 32);
     display: block;
+    box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 
 .author-info {
-    /* float: right; */
-    border: 1px solid red;
-    margin-left: 5em;
+    margin-left: 1em;
+    text-align: start;
 }
 
 .author-info p {
@@ -66,11 +69,10 @@ header q {
 
 
 .intro {
-    border-color: 2px dotted cyan;
+    padding: 0 0.5em;
 }
 
 .intro-img {
-    border: 1px solid red;
     height: 200px;
     width: auto;
     margin: auto;
@@ -79,15 +81,18 @@ header q {
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
-.recipe {
-    background-color: rgb(152, 224, 224);
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0.3em;
 }
+
 
 .recipe1 {
-    border: 1px solid red;
     height: 200px;
     width: auto;
     margin: auto;
@@ -96,11 +101,10 @@ header q {
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .recipe2 {
-    border: 1px solid red;
     height: 200px;
     width: auto;
     margin: auto;
@@ -109,10 +113,10 @@ header q {
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .recipe3 {
-    border: 1px solid red;
     height: 200px;
     width: auto;
     margin: auto;
@@ -121,10 +125,13 @@ header q {
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
-.social {
-    background-color: rgb(226, 248, 255);
+section p,
+section ul {
+    padding: 0 2em;
+    line-height: 1.6em;
 }
 
 .social {
@@ -140,10 +147,6 @@ header q {
     color: rgb(126, 126, 126);
 }
 
-.latest-posts {
-    background-color: antiquewhite
-}
-
 .footer-article {
     text-align: center;
     border-top: 1px solid rgba(39, 39, 39, 0.13);
@@ -151,11 +154,23 @@ header q {
 }
 
 .footer-article .logo {
-    max-width: 10%;
+    max-width: 40%;
 }
 
 .footer-article p {
     color: var(--text-color);
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+    
 }
 
 /* ================================================================================*/
@@ -173,7 +188,6 @@ header q {
 
 
 .latest-post-1 .card-image-latest-posts {
-    border: 1px solid red;
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -183,15 +197,14 @@ header q {
     border-radius: 10px;
     margin: 1em 0;
     align-self: center;
+    box-shadow: 0 0 7px rgba(33,33,33,.2);
 }
 
 .card-content-latest-posts {
-    background-color: tomato;
     justify-self: start;
 }
 
 .latest-post-2 .card-image-latest-posts {
-    border: 1px solid yellow;
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -201,11 +214,11 @@ header q {
     border-radius: 10px;
     margin: 1em 0;
     align-self: center;
+    box-shadow: 0 0 7px rgba(33,33,33,.2);
 }
 
 
 .latest-post-3 .card-image-latest-posts {
-    border: 1px solid purple;
     width: 100px;
     height: 100px;
     overflow: hidden;
@@ -215,6 +228,12 @@ header q {
     border-radius: 10px;
     margin: 1em 0;
     align-self: center;
+    box-shadow: 0 0 7px rgba(33,33,33,.2);
+}
+
+.card-content-latest-posts .article-category {
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 /* ================================================================================*/
@@ -231,7 +250,6 @@ header q {
     }
 
     .latest-posts-flex {
-        border: 1px dotted green;
         display: flex;
         gap: 1em;
         align-items: center;    
@@ -246,7 +264,6 @@ header q {
 @media screen and (min-width: 768px) {
 
     .grid-container-article {
-        border: 5px dotted green;
         display: grid;
         grid-template-columns: 0.1fr auto auto 0.1fr;
         grid-template-rows: 0.1fr auto auto auto auto auto auto auto 0.1fr;
@@ -302,8 +319,11 @@ header q {
     .recipe1,
     .recipe2,
     .recipe3 {
-        border: 3px solid blueviolet;
         min-height: 400px;
+    }
+
+    .author-section {
+        justify-content: center;
     }
 }
 
@@ -313,8 +333,14 @@ header q {
 
 @media screen and (min-width: 1024px) {
     .grid-container-article {
-        border: 5px dotted cyan;
+        display: grid;
+        grid-template-columns: 0.1fr auto auto 0.1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.4fr 0.5fr 0.5fr 0.5fr 0.2fr 0.4fr 0.2fr;
     }
+
+
+
+
 
 
 }

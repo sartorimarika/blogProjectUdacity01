@@ -27,8 +27,11 @@ a {
     margin: 0;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;   
+}
 nav {
-    border: 2px dotted yellowgreen;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -51,21 +54,15 @@ nav ul a {
     padding: 0.8em;
 }
 
-nav ul {
-    border-color: 2px solid aqua;
-}
 nav ul a:hover {
     color: var(--primary-color);
 }
 
-nav .logo {
-    max-width: 20%;
-    border: 1px solid pink;
+nav .logo img{
+    max-height: 40px;
+    padding-left: 1em;
 }
 
-nav .logo img {
-    width: 100%;
-}
 
 .footer-homepage {
     background: #fff;
@@ -79,12 +76,21 @@ i {
 }
 
 .footer-homepage .logo {
-    max-width: 10%;
+    max-width: 40%;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .more-posts-mindy,
 .more-posts {
-    /* border: 3px solid salmon; */
     text-align: center;
     padding: 4em;
 }
@@ -143,6 +149,7 @@ i {
     overflow: hidden;
     margin: auto;
     position: relative;
+    
 }
 
 .card-highlight-image {
@@ -156,7 +163,6 @@ i {
 
 .highlight-card .card-content,
 .highlight-card-mindy .card-content {
-    border: 1px solid black;
     position: absolute;
     bottom: 0;
 
@@ -217,10 +223,11 @@ i {
     border-radius: 20px;
     background-color: white;
     overflow: hidden;
+    
 }
 
+
 #article-1 .card-image {
-    border: 1px solid red;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -230,7 +237,6 @@ i {
 }
 
 #article-2 .card-image {
-    border: 1px solid red;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -240,7 +246,6 @@ i {
 }
 
 #article-3 .card-image {
-    border: 1px solid red;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -250,7 +255,6 @@ i {
 }
 
 #article-4 .card-image {
-    border: 1px solid red;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -266,7 +270,6 @@ i {
     .grid-container{
         /* background-color: rgb(227, 236, 149); */
         width: 100vw;
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr;
@@ -274,21 +277,19 @@ i {
         gap: 1.4rem;
     }
  
-    .grid {
-/*         background-color: #444; */
-    }
     nav {
         grid-row: 1 / 2;
-        height: 100px;
+        height: 50px;
     }
     
     .highlight {
-        border: 2px dotted purple;
         height: auto;
+        padding: 0 0.5em;
     }
     
     .article {
         height: 400px;
+        padding: 0 0.5em;
     }
     
     .highlight-1 {
@@ -329,16 +330,10 @@ i {
 @media screen and (min-width: 768px) {
 
     .grid-container {
-        /* background-color: rgb(149, 236, 168); */
-        border: 1px solid blue;
         display: grid;
         grid-template-columns: 0.1fr auto auto 0.1fr;
         grid-template-rows: 0.1fr 0.8fr 0.5fr 0.5fr 0.3fr 0.8fr 0.2fr;
         gap: 1.4em;
-    }
-    
-    .grid {
-   /*      background-color: #444; */
     }
 
     nav {
@@ -408,14 +403,10 @@ i {
 @media screen and (min-width: 1024px) {
 
     .grid-container {
-        border: 1px solid red;
         display: grid;
         grid-template-columns: 0.1fr auto auto 0.1fr;
         grid-template-rows: 0.2fr 0.8fr 0.5fr 0.5fr 0.3fr 0.8fr 0.2fr;
         gap: 1.4em;
-    }
-    
-    .grid {
     }
 
     nav {
@@ -425,13 +416,12 @@ i {
     
     .highlight {
         height: auto;
+        
     }
     
     .article {
         height: 400px;
     }
-    
-    /* grid's column */
 
     .highlight-1 {
         grid-column: 2 / 4;
