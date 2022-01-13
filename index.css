@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
 :root {
     --text-color: #1E1E1E;
     --primary-color: #D06888;
@@ -95,8 +96,7 @@ button {
     padding: 4em;
 }
 
-.more-posts-mindy a,
-.more-posts a {
+.link-more {
     color: var(--primary-color);
 }
 
