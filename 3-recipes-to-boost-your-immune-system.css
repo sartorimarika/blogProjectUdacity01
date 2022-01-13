@@ -1,4 +1,6 @@
 @import url(./index.css);
+@import url(./cards.css);
+@import url(./latest-posts.css);
 
 body {
     color: var(--text-color);
@@ -181,7 +183,6 @@ button {
     .grid-container-article {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: ;
         gap: 1.4rem;
     }
 
